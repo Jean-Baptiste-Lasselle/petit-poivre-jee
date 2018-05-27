@@ -35,5 +35,19 @@ Les conteneurs peuvent:
 
 
 
+# Goals maven , Run configurations eclipse
+
+
+Popur installer `angular-cli`:
+`clean aramitz:petit-duc-mvn-plugin:install-angular-cli -U -up -X -Dpetit.duc.git.pwd=votremotdepasse`
+
+Pour déclencher le build avec build NG5 intégré:
+
+`clean aramitz:petit-duc-mvn-plugin:build-ng5 package -U -up -X -Dpetit.duc.git.pwd=votremotdepasse`
+
+
+Pour déclencher le build avec build NG5 intégré, configuration du plugin `petit-duc-mvn-plugin` à voir dans le  `pom.xm`, et:
+
+`clean package -U -up -X -Dpetit.duc.git.pwd=votremotdepasse`
 
 

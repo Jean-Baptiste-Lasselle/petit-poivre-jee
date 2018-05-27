@@ -17,8 +17,49 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>petit-poivre-jee</finalName>
+		<plugins>
+
+			<plugin>
+				<groupId>aramitz</groupId>
+				<artifactId>petit-duc-mvn-plugin</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>build-ng5</goal>
+						</goals>
+						<configuration>
+							<!-- L'URI du repository Git versionnant le code source de la partie 
+								cliente Angular 5 -->
+<!-- 							<uri-repo-client-ng5>https://github.com/Jean-Baptiste-Lasselle/petit-poivre-angular5</uri-repo-client-ng5> -->
+<!-- 							<uri-repo-client-ng5>https://github.com/KrunalLathiya/Angular5CRUD</uri-repo-client-ng5> -->
+							<uri-repo-client-ng5>https://github.com/Jean-Baptiste-Lasselle/petit-poivre-client-ng5</uri-repo-client-ng5>
+							
+							
+<!-- 							<version-client-ng5>1.0.9</version-client-ng5> -->
+							<!-- Utilisateur Git utilisé par l'usine logicielle, ou le développeur -->
+							<git-user-name>Jean-Baptiste-Lasselle</git-user-name>
+							<!-- la valeur qui sera donnée à l'option base-href, pour l'exécution 
+								de la commande [ng build ...] -->
+<!-- 							<ng-build-base-href>./portail-des-hiboux/</ng-build-base-href> -->
+							<ng-build-base-href>.</ng-build-base-href>
+							
+
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
 	</build>
 </project>
