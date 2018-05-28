@@ -7,7 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>petit-poivre-jee Maven Webapp</name>
 	<url>https://github.com/Jean-Baptiste-Lasselle/petit-poivre-jee</url>
-
+	<description>Un module web jee un peu spécial, prévu pour les tests de https://github.com/Jean-Baptiste-Lasselle/petit-duc-mvn-plugin</description>
 
 
 	<dependencies>
